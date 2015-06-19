@@ -9,8 +9,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 #cc_logo {
   border: none;
-  width: 400px;
-  background: none; }
+  width: 300px;
+  background: none;
+  position: relative;
+  top: -100px; }
 
 .intro {
   background-size: 100%; }
@@ -21,6 +23,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
   left: 1em;
   font-size: 0.5em;
   display: none; }
+
+.reveal .slides {
+  text-align: left; }
 
 /*********************************************
  * GLOBAL STYLES

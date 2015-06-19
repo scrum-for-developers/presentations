@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>SCRUM for developers workshop by codecentric</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -44,16 +44,69 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background="img/background_title.jpg" data-state="intro">
-					<img src="img/cc_logo.png" id="cc_logo" />					
-					<h1 class="heading">Main Title of the presentation</h1>
-					<h3 class="heading">Click to edit Master subtitle style</h3>					
+					<img src="img/cc_logo.png" id="cc_logo" />
+					<h1 class="heading">Scrum for developers</h1>
+					<hr class="heading"/>
+					<h3 class="heading">Scrum for development team members</h3>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<h2>Training Schedule</h2>
+					<table style="font-size:0.6em;">
+						<tr>
+							<th>Day 1</th>
+							<th>Day 2</th>
+							<th>Day 3</th>
+						</tr>
+						<tr>
+							<td>
+								<h4>Sprint1: Build & Release Management</h4>
+								<p>Goals:
+									<ul>
+										<li>Version Control</li>
+										<li>Dependency Management</li>
+										<li>Branching</li>
+										<li>Release Migration</li>
+									<ul>
+								</p>
+							</td>						
+							<td>
+								<h4>Sprint3: ATDD</h4>
+								<p>Goals:</p>
+								<ul>
+									<li>Executable Specs</li>
+									<li>Acceptance Test Framework</li>
+								<ul>
+							</td>						
+							<td>
+								<h4>Sprint5</h4>								
+							</td>							
+						</tr>
+						<tr>
+							<td>
+								<h4>Sprint 2: TDD</h4>
+								<p>Goals:
+									<ul>
+										<li>TDD</li>
+										<li>Mocking</li>
+										<li>Coverage</li>									
+									<ul>
+								</p>
+							</td>						
+							<td>
+								<h4>Sprint4: Code Quality</h4>
+								<p>Goals:</p>
+								<ul>
+									<li>Refactoring</li>
+									<li>Metrics</li>
+									<li>Clean Code</li>									
+								<ul>
+							</td>						
+							<td>
+								<h4>Sprint5</h4>								
+							</td>							
+						</tr>
+					</table>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -394,6 +447,7 @@ Reveal.addEventListener( 'customevent', function() {
 				history: true,
 				center: true,
 				slideNumber: true,
+
 
 
 				transition: 'fade', // none/fade/slide/convex/concave/zoom
