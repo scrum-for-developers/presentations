@@ -2,11 +2,15 @@
 
 Built with reveal.js
 
-This is actually just the default reveal.js repo with first changes. It's still work in progress.
+This is still work in progress.
 
-You need node installed.
+What I want to do is rebuild the scrum for developers presentation with reveal.js.
 
-To look at it, just open the index.html or run it by entering
+## Installation instructions
+
+To look at it, just open the index.html.
+
+To build it you need node installed. Then run:
 ```console
 npm install
 grunt serve
