@@ -1,0 +1,113 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/webfonts/MyFontsWebfontsKit.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #000;
+$headingColor: #345;
+$headingColorTitle: #fff;
+
+$mainFontSize: 38px;
+$mainFont: 'Panton-Regular', Helvetica, sans-serif;
+$headingFont: 'Panton-Bold', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222; 
+	}
+}
+
+
+.reveal  img {
+	border: none;
+	background:none;
+}
+
+.cc_logo {
+	border: none;
+	width:300px;
+	background:none;
+	position:relative;
+	top:-100px;	
+}
+
+.cc_logo_footer {
+	border: none;
+	width:300px;
+	background:none;
+	position:relative;	
+	top:15px;
+	left:5%;
+}
+
+.intro {
+	background-size:100%;
+}
+
+.reveal .footer{
+	position: absolute;	
+	//display:none;
+	background-color:#262626;
+	bottom:0px;
+	width:100%;
+	height: 70px;	
+	color:fff;	
+	display:none;
+}
+
+
+
+.reveal .slides{
+	text-align:left;
+
+}
+
+.reveal .slide-number {
+	font-size: 0.8em;
+	color:#fff;
+	right: 5%;	
+	border:1px solid;
+	border-radius:50px;
+	width: 45px;
+	height: 45px;
+	text-align:center;
+	line-height:1.6em;
+	display:none;
+	bottom:10px;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
