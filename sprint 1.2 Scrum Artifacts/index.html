@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SCRUM for developers workshop by codecentric</title>
+
+		<meta name="description" content="A framework for easily creating beautifli presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/codecentric.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="img/background_title.jpg" data-state="intro">
+					<img src="img/cc_logo.png" class="cc_logo" />
+					<h2 class="heading">Scrum for developers</h2>
+					<hr class="heading"/>
+					<h3 class="heading">Scrum Fundamentals</h3>
+				</section>
+				<section>
+					<h2>Scrum overview</h2>
+					<div style="text-align:center;">
+						<img  src="img/scrum_overview.png"/>						
+					</div>
+				</section>
+				<section>
+					<h2>Scrum Team</h2>
+					<div style="text-align:center;">
+						<img style="height:500px;;" src="img/scrum_team.png"/>						
+					</div>
+				</section>
+				<section>					
+					<div style="text-align:center;">
+						<img style="height:500px;;" src="img/scrum_artifacts.png"/>						
+					</div>
+				</section>
+				<section>				
+					<h2>Product/Release Burn-Down Chart</h2>
+					<table >
+						<tr>
+							<td style="font-size:0.6em;vertical-align:top;">
+								A Burn-Down chart shows <br />
+								<ul>
+									<li>What has been achieved</li>
+									<li>What is left to do</li>
+								</ul><br />
+								For a release, it shows remaining features to complete for a release
+							</td>
+							<td>
+								<img style="width:650px;"src="img/burndown_chart.png">
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>				
+					<h2>Velocity</h2>
+					<table >
+						<tr>
+							<td style="font-size:0.6em;vertical-align:top;">								
+								<ul>
+									<li>Used by the Product Owner to provice forecasts</li>
+									<li>Used by the Development Team to gauge how much work to pull in a Sprint Planning meeting</li>
+								</ul>
+							</td>
+							<td>
+								<img style="width:650px;"src="img/velocity.png">
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>				
+					<h2>Task Board</h2>
+					<table>
+						<tr>
+							<td style="font-size:0.6em;vertical-align:top;">								
+								<ul>
+									<li>Task status and responsibility</li>
+									<li>Continuously updated: New Tasks are added as they are discovered</li>
+									<li>Reestimate remaining effort every day (up or down)</li>									
+								</ul>
+							</td>
+							<td>
+								<img style="width:650px;"src="img/task_board.png">
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>				
+					<h2>Sprint Burn-Down Chart</h2>
+					<table>
+						<tr>
+							<td style="font-size:0.6em;vertical-align:top;">								
+								<ul>
+									<li>Daily summation of work remaining in Sprint</li>
+									<li>Often goes up before it goes down</li>
+									<li>Post for high visibility</li>									
+									<li>Reflects team intuition</li>
+									<li>Not for anyone but the development team</li>																		
+								</ul>
+							</td>
+							<td>
+								<img style="width:650px;"src="img/sprint_burndown_chart.png">
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>				
+					<div style="text-align:center;">
+						<img style="height:500px;;" src="img/scrum_events.png"/>						
+					</div>
+				</section>
+				<section>				
+					<h3>Scrum events and time boxes (Real World)</h3>
+					<div style="text-align:center;">
+						<img  src="img/scrum_events_and_time_boxes.png"/>						
+					</div>
+				</section>
+				<section>				
+					<h3>Scrum events and time boxes (Training)</h3>
+					<div style="text-align:center;">
+						<img  src="img/scrum_events_and_time_boxes_training.png"/>						
+					</div>
+				</section>
+				<section>
+					<h2>Story Points</h2>
+					<ul style="font-size:0.8em;">
+						<li>Estimates are done in releative, unitless values</li>
+						<li>You estimate only in relations, not absolutely</li>
+						<li>Estimation can be done</li>
+						<ul>
+							<li>By Planning Poker (for few or new stories)</li>
+							<li>By Affinity Estimation (for a complete product backlog)</li>
+							<li>By Magic Estimation (similar to Affinity Estimation)</li>
+						</ul>
+						<li>Why relative?</li>
+						<ul>
+							<li>Story points stay constant over time</li>
+							<li>The teams velocity can change</li>
+							<li>Story points normalize skill level</li>
+							<li>Story points normalize done level</li>
+						</ul>
+				</section>
+				<section>
+					<h2>Planning Poker</h2>
+					<ol>
+						<li>Product Owner presents and reads a new story</li>
+						<li>Every Development Team member chooses a card (1,2,3,5,8,13,20,40,100,?)</li>
+						<li>When everybody is ready, all cards are revealed</li>
+						<li>Are all cards in range of three (1-3, 2-5, 3-8, 5-13,...)?</li>
+						<ul>
+							<li>If yes, continue at step 1</li>
+							<li>If no, Players with highest and lowest cards discuss their views for a moment. Then continue with step 2.</li>
+						</ul>
+					</ol>
+				</section>
+				<section>
+					<h2>Feature Branch vs. Trunk Based Development</h2>
+					<table style="font-size:0.55em;">
+						<tr>
+							<th><h3>Feature Branches</h3></th>
+							<th><h3>Trunk Based Development</h3></th>
+						</tr>
+						<tr>
+							<td>What happens if the first story is the one that could not be finished?</td>
+							<td>Unfinished Stories are a problem:<br/>
+								<ul>
+									<li>Rollback?</li>
+									<li>Secret Delivery? ("Won't Hurt")</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>Easy branches and merges with a DVCS. Like Mercurial or Git</td>
+							<td>Unfinished Features<br/>
+								- Solution: Feature Toggles?
+							</td>
+						</tr>
+						<tr>
+							<td >Continuous Integration:<br/>
+								<ul>
+									<li>Make Stories small enough</li>
+									<li>Have CI for every branch</li>
+								</ul>
+							</td>
+							<td/>
+						</tr>
+						<tr>
+							<td>Merging is a PITA<br/></td><td/>
+						</tr>
+						<tr>
+							<td >Every commit should be integrated immediately<br/></td><td/>
+						</tr>
+						<tr>
+							<td >Martin Fowler: Inhibits refactoring (big, daring merge coming ahead!)<br/></td><td/>
+						</tr>
+
+					</table>
+				</section> 
+				<section>
+					<h3>Project Setup & Dependendy Management</h3>
+					<table style="font-size:0.7em;">
+						<tr>
+							<td style="width:50%;">
+								Expectations:<br/>
+								<ul>
+									<li>Quickly find and add new dependencies</li>
+									<li>Find out transitive dependencies</li>
+									<li>Detect dependency conflicts</li>
+									<li>All projects follow the same conventions</li>
+									<li>Allows self-contained CI</li>
+								</ul>
+							</td>
+							<td class="dodbox" >Definition of Done:
+								<ul>
+									<li>projects follow conventions</li>
+									<li>dependencies are managed</li>
+									<li>no binaries in source repository</li>
+									<li class="former">sources are under version control</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2>Convention and automation</h2>
+					<h4>Convention over configuration - Standardized</h4>
+						<ul style="font-size:0.6em;">
+							<li>project structure</li>
+							<li>build process</li>
+							<li>release process</li>
+							<li>CI integration</li>
+						</ul>
+					<h4>Automation is necessary for short iterations. Steps to automate:</h4>
+						<ul style="font-size:0.6em;">
+							<li>Compile source code</li>
+							<li>Execute unit tests</li>
+							<li>Gather static code metrics</li>
+							<li>Package artifacts</li>
+							<li>Generate technical reports and documentation</li>
+							<li>Create versions and releases</li>
+							<li>Deploy to various target environments</li>
+							<li>Execute acceptance tests</li>
+						</ul>
+				</section>
+				<section>
+					<h3>Release Management</h3>
+					<table style="font-size:0.7em;">
+						<tr>
+							<td style="width:50%;">
+								Expectations:<br/>
+								<ul>
+									<li>A meaningful version number</li>
+									<li>Handle unfinished stories</li>
+									<li>Installation and migration instructions are maintained</li>
+									<li>Release notes that communicate what's new in each release</li>
+								</ul>
+							</td>
+							<td class="dodbox" >Definition of Done:
+								<ul>
+									<li>stories are developed in branches</li>
+									<li>version number is incremented</li>
+									<li>release notes are updated</li>
+									<li>production database is migrated (whithout loss of production data)</li>
+									<li class="former">projects follow conventions</li>
+									<li class="former">dependencies are managed</li>
+									<li class="former">no binaries in source repository</li>
+									<li class="former">sources are under version control</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2>Release Version Numbers</h3>
+					<h4>major.sprint.maintenance &#8594; 1.2.0</h4>
+					<table style="font-size:0.6em;">
+						<tr>
+							<th><h4>Version Component</h4></th>
+							<th><h4>Meaning</h4></th>
+						</tr>
+						<tr>
+							<td>Major</td>
+							<td>Gets incremented with every release. Backwards compatibility is often broken between releases, but should be documented. <br/>Starts at 1.</td>
+						</tr>
+						<tr>
+							<td>Sprint</td>
+							<td>Every sprint has its own number.<br/>Starts at 1.</td>
+						</tr>
+						<tr>
+							<td>Maintenance</td>
+							<td>Increases with every bugfix release. All Releases after this must include
+								all previous updates.<br/>Starts at 0.</td> 
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2>Release Process with maven</h3>
+					<h4>Steps for a new release (at the end of each sprint)</h4>
+					<ul style="font-size:0.7em;">
+						<li>Set Version in all pom.xml files to the next release number (e.g. from 1.4.0-SNAPSHOT to 1.4.0)</li>
+						<li>Build project (to check if everything is working)</li>
+						<li>Commit and push (make sure you are on the master branch)</li>
+						<li>Create tag (and push it)</li>
+						<li>Let Jenkins build and deploy release artifacts</li>
+					</ul>
+					<h4>To restart work on a new release (at the start of the new Sprint)</h4>
+					<ul style="font-size:0.7em;">
+						<li>Set version in all pom.xml files to the next SNAPSHOT number (e.g. from 1.4.0 to 1.5.0-SNAPSHOT)</li>
+						<li>Commit and push</li>
+						<li>Merge changes into all open feature branches</li>
+					</ul>
+					
+				</section>
+				<section>
+					<h2>Maven release plugin</h2>
+					<p>There is a maven plugin to automate the release process:</p>
+					<ol style="font-size:0.6em;">
+						<li>Check for uncommited changes</li>
+						<li>Perform build to verify that the project is ok</li>
+						<li>Update version from snapshit to release; commit changes (1.3.7-SNAPSHOT &#8594; 1.3.7)</li>
+						<li>Create tag for the new releas</li>
+						<li>Update version to next snapshot; commit changes</li>
+						<li>Checkout of release tag is performed in new temp directory;
+							build is performed and artifacts deployed</li>						
+					</ol>
+					<h4>Problems</h4>
+					<ul style="font-size:0.6em;">
+						<li>Unstable and error-prone</li>
+						<li>Hard to rsoll back / reset after failed releas</li>
+						<li>Not possible to le CI build release artifacts</li>
+					</ul>
+					<h4>Solution: Don't use the maven-release plugin!</h4>
+				</section>
+				<section>
+					<h2>Release migration</h2>
+					<ul style="font-size:0.6em;">
+						<li>The assumptions an application makes about its environment will change</li>
+						<li>Migration can become necessary after every Sprint</li>
+						<ul>
+							<li>Changes to the database schema</li>
+							<ul>
+								<li>Data needs to be migrated</li>
+								<li>Data migration scripts must be tested</li>
+							</ul>
+							<li>Environment configuration changed</li>
+							<ul>
+								<li>JNDI bindung, JMS resources, environment variables, etc.</li>
+							</ul>
+							<li>Environment itself changed</li>
+							<ul>
+								<li>Platform is updated</li>
+								<li>Systems that are used are updated (or removed)
+							</ul>
+						</ul>
+						<li>Every Release requires an installation and/or migration guide</li>
+						<li>Notes should contain the full history (to allow skipping versions)</li>
+						<li>Acceptance tests should test the migration process, too</li>
+						<li>Can only be partly automated</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Tool supported release migration</h2>
+					<p>Tools can be used to support the release migration</p>
+					<ul style="font-size:0.6em;">						
+						<li><h4>Know your process</h4></li>
+						<ul>
+							<li>Before you automate your release, do it manually often</li>
+							<li>Understand the steps and their importance</li>
+						</ul>
+						<li><h4>DB Migration</li>
+						<ul>
+							<li>Store applied migration scripts in the database itself</li>
+							<li>Make scripts check agains version of the database schema</li>
+							<li>Tool opportunity: Liquibase</li>
+						</ul>
+						<li><h4>Release Notes</li>
+						<ul>
+							<li>Integrate various sources: Wiki, Issue Tracking, Project Configuration (POM)</li>
+							<li>Tool opportunity: Maven Changes Plugin</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h2>Automated DB Migration</h2>
+					<ul style="font-size: 0.6em;">
+						<li>“Liquibase is an open source (Apache 2.0 Licensed), database-independent library for tracking, managing and applying database changes”</li>
+						<li>Each database change is version controlled and a part of the sources</li>
+						<li>XML Style Changeset descriptions</li>
+						<li>Automated rollback support for most commands</li>
+					</ul>
+					<pre><code class="xml" data-trim>
+  &lt;changeSet id="1.4.0-borrowing" author="daniel.arndt"&gt;
+    &lt;createTable tableName="Borrowing"&gt;
+      &lt;column name="id" autoIncrement="true" type="bigint(20)"&gt;
+        &lt;constraints primaryKey="true" nullable="false" /&gt;
+      &lt;/column&gt;      
+      ...
+    &lt;/createTable&gt;
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h2>Automated DB Migration (2)</h2>
+					<p>Various integration options (Ant, Maven, Command Line, Spring, ServletListener, ...)</p>
+					<table style="font-size:0.6em; width:100%">
+						<tr>
+							<th><h4>Some Maven Goals</h4></th>
+							<th><h4>Description</h4></th>
+						</tr>
+						<tr>
+							<td>liquibase:update</td>
+							<td>Update the database to the latest version</td>
+						</tr>
+						<tr>
+							<td>liquibase:updateSql</td>
+							<td>Generate SQL for updating to the latest version</td>
+						</tr>
+						<tr>
+							<td>liquibase:tag</td>
+							<td>Create a tag in the database for rolling back later</td>
+						</tr>
+						<tr>
+							<td>liquibase:rollback</td>
+							<td>rollback changesets (last, to date, to tag)</td>
+						</tr>
+						<tr>
+							<td>liquibase:status</td>
+							<td>Display status of target database</td>
+						</tr>
+						<tr>
+							<td>liquibase:diff</td>
+							<td>Diff two databases or database to hibernate config</td>
+						</tr>
+						<tr>
+							<td>liquibase:help</td>
+							<td>Description of all Maven goals</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2>Maven managed Release notes</h2>
+					<ul style="font-size:0.6em;">
+						<li>Maven Changes Plugin generates release note reports and integrates it to the project Maven site</li>
+						<li>Sends the release notes via email as a release announcement</li>
+						<li>Extracts changes from your issue management system automatically</li>
+						<li>Extracts changes from changes.xml file in the project sources</li>
+					</ul>
+					<table style="font-size:0.6em;width:100%;">
+						<tr>
+							<th><h4>Maven Goal</h4></th>
+							<th><h4>Description</h4></th>
+						</tr>
+						<tr>
+							<td>changes:announcement-generate</td>
+							<td>Generate a release announcement</td>
+						</tr>
+						<tr>
+							<td>changes:announcement-mail</td>
+							<td>Send a release announcement via email</td>
+						</tr>
+						<tr>
+							<td>changes:changes-report</td>
+							<td>Create a report with changes between different releases of the project</td>
+						</tr>
+						<tr>
+							<td>changes:jira-report</td>
+							<td>Create a report from the issues in a remote JIRA instance</tD>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2>Release Notes Sample</h2>
+					<img src="img/release_notes_sample.png"/>
+				</section>
+				<section>
+					<h2>Continuous Integration</h2>
+					<table style="font-size:0.7em;">
+						<tr>
+							<td style="width:50%;">
+								Expectations:<br/>
+								<ul>
+									<li>Fast feedback for everybody about integration status</li>
+									<li>pics up changes to version control automatically</li>
+									<li>uses same build environment as local developer</li>
+								</ul>
+							</td>
+							<td class="dodbox" >Definition of Done:
+								<ul>
+									<li>master branch is built on CI server</li>
+									<li class="former">stories are developed in branches</li>
+									<li class="former">version number is incremented</li>
+									<li class="former">release notes are updated</li>
+									<li class="former">production database is migrated (whithout loss of production data)</li>
+									<li class="former">projects follow conventions</li>
+									<li class="former">dependencies are managed</li>
+									<li class="former">no binaries in source repository</li>
+									<li class="former">sources are under version control</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2>Demo Time</h2>					
+				</section>
+				<section>
+					<img class="okgo " src="img/OK.png" />
+					<img class="okgo fragment fade-in " src="img/GO.png" />
+					
+				</section>
+			</div>		
+			<div class="footer">
+				<img src="img/cc_logo.png" class="cc_logo_footer" />
+			</div>
+		</div>
+		<script>
+
+			// Flil list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugin
+				dependencies: [
+				 	{ src: 'socket.io/socket.io.js', async: true },
+        			{ src: 'plugin/notes-server/client.js', async: true },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});			
+			Reveal.addEventListener('slidechanged', function(event) {				
+				if (Reveal.getState().indexh === 0 && Reveal.getState().indexv === 0){
+					document.querySelector('.reveal .footer').style.display = 'none';
+					document.querySelector('.reveal .slide-number').style.display = 'none';					
+				} else{
+					document.querySelector('.reveal .footer').style.display = 'block';
+					document.querySelector('.reveal .slide-number').style.display = 'block';					
+				}				
+				
+			});
+
+		</script>
+
+	</body>
+</html>
