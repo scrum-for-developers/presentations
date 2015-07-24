@@ -38,6 +38,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   color: fff;
   display: none; }
 
+.dodbox {
+  background-color: #1E9E91;
+  border-radius: 10px; }
+
 .reveal .slides {
   text-align: left; }
 
@@ -53,6 +57,13 @@ section.has-light-background, section.has-light-background h1, section.has-light
   line-height: 1.6em;
   display: none;
   bottom: 10px; }
+
+.former {
+  color: #555; }
+
+.okgo {
+  width: 48%;
+  border: none; }
 
 /*********************************************
  * GLOBAL STYLES
@@ -255,8 +266,7 @@ body {
  * IMAGES
  *********************************************/
 .reveal section img {
-  margin: 15px 0px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  margin: 15px 0px; }
 
 .reveal a img {
   -webkit-transition: all 0.15s linear;
