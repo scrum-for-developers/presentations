@@ -10,7 +10,7 @@ What I want to do is rebuild the scrum for developers presentation with reveal.j
 
 To look at it, just open the index.html.
 
-To build it you need node installed. Then run:
+To build it you need node installed. Then run (in a presentation folder):
 ```console
 npm install
 grunt serve
