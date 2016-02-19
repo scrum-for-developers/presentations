@@ -35,6 +35,18 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<style type="text/css">
+			ul {
+				margin-top: 0;
+			}
+			table.training-schedule {
+				font-size:0.6em;
+			}
+			table.training-schedule td {
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -51,7 +63,7 @@
 				</section>
 				<section>
 					<h2>Training Schedule</h2>
-					<table style="font-size:0.6em;">
+					<table class="training-schedule">
 						<tr>
 							<th><h3>Day 1<h3></th>
 							<th><h3>Day 2<h3></th>
@@ -59,51 +71,48 @@
 						</tr>
 						<tr>
 							<td>
-								<h4>Sprint 1: Build & Release Management</h4>
-								<p>Goals:
-									<ul>
-										<li>Version Control</li>
-										<li>Dependency Management</li>
-										<li>Branching</li>
-										<li>Release Migration</li>
-									<ul>
-								</p>
-							</td>						
+								<h4>Sprint 1: Introduction</h4>
+								<ul>
+									<li>Scrum Basics</li>
+									<li>Git, Maven, Jenkins</li>
+									<li>Worblehat Architecture</li>
+								</ul>
+							</td>
 							<td>
-								<h4>Sprint 3: ATDD</h4>
-								<p>Goals:</p>
+								<h4>Sprint 3: TDD</h4>
+								<ul>
+									<li>TDD</li>
+									<li>Mocking</li>
+									<li>Coverage</li>
+								</ul>
+							</td>
+							<td>
+								<h4>Sprint 5: ATDD</h4>
 								<ul>
 									<li>Executable Specs</li>
 									<li>Acceptance Test Framework</li>
-								<ul>
-							</td>						
-							<td>
-								<h4>Sprint 5</h4>								
-							</td>							
+								</ul>
+							</td>
 						</tr>
 						<tr>
 							<td>
-								<h4>Sprint 2: TDD</h4>
-								<p>Goals:
-									<ul>
-										<li>TDD</li>
-										<li>Mocking</li>
-										<li>Coverage</li>									
-									<ul>
-								</p>
-							</td>						
+								<h4>Sprint 2: Release Migration</h4>
+								<ul>
+									<li>Version Numbers</li>
+									<li>Release Notes</li>
+									<li>Database Migration</li>
+								</ul>
+							</td>
 							<td>
 								<h4>Sprint 4: Code Quality</h4>
-								<p>Goals:</p>
 								<ul>
 									<li>Refactoring</li>
 									<li>Metrics</li>
-									<li>Clean Code</li>									
-								<ul>
-							</td>						
+									<li>Clean Code</li>
+								</ul>
+							</td>
 							<td>
-								<h4>Sprint 6</h4>								
-							</td>							
+							</td>
 						</tr>
 					</table>
 				</section>
@@ -116,62 +125,62 @@
 							<th><h3>Description</h3></th>
 						</tr>
 						<tr>
-							<td>Instruction</td>						
-							<td>60</td>						
+							<td>Instruction</td>
+							<td>60</td>
 							<td>Presentation and demonstration of new and
-								relevant tools & practices</td>							
+								relevant tools & practices</td>
 						</tr>
 						<tr>
-							<td>Backlog Grooming</td>						
-							<td>10</td>						
-							<td>Team Estimates the Product Backlog</td>							
+							<td>Backlog Grooming</td>
+							<td>10</td>
+							<td>Team Estimates the Product Backlog</td>
 						</tr>
 						<tr>
-							<td>-- Break --</td>						
-							<td>10</td>						
-							<td></td>							
+							<td>-- Break --</td>
+							<td>10</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Sprint Planning I</td>						
-							<td>5</td>						
+							<td>Sprint Planning I</td>
+							<td>5</td>
 							<td>Product owner presents backlog; each team
-								commits to delivering functionality</td>							
+								commits to delivering functionality</td>
 						</tr>
 						<tr>
-							<td>Sprint Planning II</td>						
-							<td>15</td>						
-							<td>Each team determines how to build the functionality</td>							
+							<td>Sprint Planning II</td>
+							<td>15</td>
+							<td>Each team determines how to build the functionality</td>
 						</tr>
 						<tr>
-							<td>Sprint</td>						
-							<td>92</td>						
+							<td>Sprint</td>
+							<td>92</td>
 							<td>The team self-organizes to complete their tasks
-								(3-4 days à 23 minutes: 3' Daily Scrum + 20' virtual day)</td>							
+								(3-4 days à 23 minutes: 3' Daily Scrum + 20' virtual day)</td>
 						</tr>
 						<tr>
-							<td>Sprint review</td>						
-							<td>10</td>						
-							<td>Two teams (2x5') present their done functionality</td>							
+							<td>Sprint review</td>
+							<td>15</td>
+							<td>Teams present their done functionality</td>
 						</tr>
 						<tr>
-							<td>Sprint retrospective</td>						
-							<td>15</td>						
-							<td>A brief team retrospective meeting will be held to inspect and adapt</td>							
+							<td>Sprint retrospective</td>
+							<td>15</td>
+							<td>A brief team retrospective meeting will be held to inspect and adapt</td>
 						</tr>
 					</table>
-				</section> 
+				</section>
 				<section>
 					<h2>A-Ha wall, feedback door</h1>
 					<img src="img/wall1.jpg" style="width:500px;"/>
 					<img src="img/wall2.jpg" style="width:400px;"/>
 				</section>
-			</div>		
+			</div>
 			<div class="footer">
 				<img src="img/cc_logo.png" class="cc_logo_footer" />
 			</div>
 		</div>
 
-		
+
 
 		<script>
 
@@ -199,16 +208,16 @@
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
-			});			
-			Reveal.addEventListener('slidechanged', function(event) {				
+			});
+			Reveal.addEventListener('slidechanged', function(event) {
 				if (Reveal.getState().indexh === 0 && Reveal.getState().indexv === 0){
 					document.querySelector('.reveal .footer').style.display = 'none';
-					document.querySelector('.reveal .slide-number').style.display = 'none';					
+					document.querySelector('.reveal .slide-number').style.display = 'none';
 				} else{
 					document.querySelector('.reveal .footer').style.display = 'block';
-					document.querySelector('.reveal .slide-number').style.display = 'block';					
-				}				
-				
+					document.querySelector('.reveal .slide-number').style.display = 'block';
+				}
+
 			});
 
 		</script>
