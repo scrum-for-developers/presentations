@@ -35,6 +35,21 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style type="text/css">
+		  .reveal ul, .reveal ol {
+				width: 100%;
+			}
+			.reveal ul ul, .reveal ol ul, .reveal ul ol {
+				font-size: 0.9em;
+			}
+			table.agenda {
+				font-size: 0.6em
+			}
+			table.agenda td {
+				width: 25%;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -44,7 +59,7 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section data-background="img/background_title.jpg" data-state="intro">
+				<section data-background="img/background_title.jpg" data-state="intro" class="center">
 					<img src="img/cc_logo.png" class="cc_logo" />
 					<h2 class="heading">Scrum for developers - Sprint 1</h2>
 					<hr class="heading"/>
@@ -52,85 +67,113 @@
 				</section>
 
 				<section>
-					<h2>Agenda</h2>
-					<div style="font-size: 0.6em">
-						<ol>
-							<li>Introduction: Story & Backlog</li>
-							<li>
-								Meetings
-								<ol>
-									<li>Refinement</li>
-									<li>Planning I+II</li>
-									<li>Daily</li>
-									<li>Review/Demo</li>
-									<li>Retrospective</li>
-								</ol>
-							</li>
-							<li>
-								Estimation & Story Points
-								<ol>
-									<li>Why estimate?</li>
-									<li>What do we estimate?</li>
-									<li>How do we estimate?</li>
-								</ol>
-							</li>
-							<li>
-								Scrum Artifacts
-								<ol>
-									<li>Definition of Done</li>
-									<li>Task Board</li>
-									<li>Sprint Burndown</li>
-									<li>Velocity Chart</li>
-								</ol>
-							</li>
-						</ol>
-					</div>
-				</section>
-
-				<!-- INTRODUCTION -->
-				<section>
-					<h2>1. Scrum overview</h2>
 					<div style="text-align:center;">
 						<img  src="img/scrum_overview.png"/>
 					</div>
 				</section>
 
 				<section>
-					<h2>1. Scrum Team</h2>
+					<h2>Agenda</h2>
+					<table class="agenda">
+						<tr>
+							<td>
+								<h4>Introduction</h4>
+								<ul>
+									<li>Roles</li>
+									<li>Story & Backlog</li>
+								</ul>
+							</td>
+							<td>
+								<h4>Meetings</h4>
+								<ul>
+									<li>Refinement</li>
+									<li>Planning I+II</li>
+									<li>Daily</li>
+									<li>Review/Demo</li>
+									<li>Retrospective</li>
+								</ul>
+							</td>
+							<td>
+								<h4>Estimation</h4>
+								<ul>
+									<li>Why?</li>
+									<li>What?</li>
+									<li>How?</li>
+								</ul>
+							</td>
+							<td>
+								<h4>Scrum Artifacts</h4>
+								<ul>
+									<li>Definition of Done</li>
+									<li>Task Board</li>
+									<li>Sprint Burndown</li>
+									<li>Velocity Chart</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<!-- INTORDUCTION -->
+				<section>
+					<h1>Introduction</h1>
+					<ul>
+						<li>Roles</li>
+						<li>Story & Backlog</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Scrum Team</h2>
 					<div style="text-align:center;">
 						<img style="height:500px;;" src="img/scrum_team.png"/>
 					</div>
 				</section>
 
+				<section>
+					<h2>Story & Backlog</h2>
+				</section>
+
 				<!-- MEETING -->
 				<section>
-					<h3>2. Scrum events and time boxes (Real World)</h3>
+					<h1>Meetings</h1>
+					<ul>
+						<li>Refinement</li>
+						<li>Planning I+II</li>
+						<li>Daily</li>
+						<li>Review/Demo</li>
+						<li>Retrospective</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Scrum events and time boxes (Real World)</h3>
 					<div style="text-align:center;">
 						<img  src="img/scrum_events_and_time_boxes.png"/>
 					</div>
 				</section>
 
 				<section>
-					<h3>2. Scrum events and time boxes (Training)</h3>
+					<h3>Scrum events and time boxes (Training)</h3>
 					<div style="text-align:center;">
 						<img  src="img/scrum_events_and_time_boxes_training.png"/>
 					</div>
 				</section>
 
 				<section>
-					<img class="fragment fade-in scrumtipp"  src="img/scrum_tipp.png" />
-					<h2>2. Backlog Refinement</h2>
+					<h2>Backlog Refinement</h2>
 					<ul style="font-size:0.8em;">
 					</ul>
 				</section>
 
 				<section>
-					<img class="fragment fade-in scrumtipp"  src="img/scrum_tipp.png" />
-					<h2>2. Sprint Planning</h2>
+					<h2>Sprint Planning</h2>
 					<ul style="font-size:0.8em;">
 						<li>Part I</li>
 						<ul>
-							<li>If necessary, now is the time to get into discussion with PO what exactly is part of the story, what might be optional, etc.</li>
+							<li>PO presents stories and priorities</li>
+							<li>Development-Team and PO discuss, what exactly is part of the story, what might be optional, etc.</li>
+							<li>Development-Team makes a forecast, what functionality it plans to achieve during the next sprint</li>
 						</ul>
 						<li>Part II</li>
 						<ul>
@@ -139,16 +182,13 @@
 							<li>Draw GUI mock-ups (if not already done so by UX)</li>
 							<li>Have those sketches visible during the sprint</li>
 							<li>Do some research or look in the code base if necessary</li>
-							<ul>
-								<li>Or time-box some research later, have a later task as a place holder that is</li>
-							</ul>
+							<li>Or time-box some research later, have a later task as a place holder</li>
 						</ul>
 					</ul>
 				</section>
 
 				<section>
-					<img class="fragment fade-in scrumtipp"  src="img/scrum_tipp.png" />
-					<h2>2. Sprint Review/Demo</h2>
+					<h2>Sprint Review/Demo</h2>
 					<ul style="font-size:0.8em;">
 						<li>Purpose?</li>
 						<ul>
@@ -172,199 +212,185 @@
 				</section>
 
 				<section>
-					<img class="fragment fade-in scrumtipp"  src="img/scrum_tipp.png" />
-					<h2>2. Retrospective</h2>
-					<ul style="font-size:0.7em;">
-						<li>Prime Directive: „Regardless of what we discover, we must understand and truly believe that everyone did the best job he or she could, given what was known at the time, his or her skills and abilities, the resources available, and the situation at hand.</li>
-						<li>5 Phases (Book: Agile Retrospectives, Ester Derby & Diana Larson</li>
-						<ol>
-							<li>Setting The Stage</li>
-							<li>Gathering Data</li>
-							<li>Generate Insights</li>
-							<li>Decide What to Do</li>
-							<li>Closing</li>
-						</ol>
+					<h2>Retrospective</h2>
+					<p style="font-size:0.8em;">
+						<strong>Prime Directive: </strong>„Regardless of what we discover, we must understand and truly believe that everyone did the best job he or she could, given what was known at the time, his or her skills and abilities, the resources available, and the situation at hand.
+					</p>
+
+					<ul style="font-size:0.8em;">
+						<li>5 Phases (Book: Agile Retrospectives, Ester Derby & Diana Larson
+							<ol>
+								<li>Setting The Stage</li>
+								<li>Gathering Data</li>
+								<li>Generate Insights</li>
+								<li>Decide What to Do</li>
+								<li>Closing</li>
+							</ol>
+						</li>
 						<li>Focus rather on system & process instead of individuals</li>
 						<li>Add results to the Sprint Backlog, make somebody responsible</li>
-						<li>If in doubt, go with high energy rather than with high impact</li>
-						<li>Deming: Plan, Do, Check, Act</li>
-						<li>Covey (7 Habits): Sharpen The Saw</li>
 					</ul>
 				</section>
 
 				<!-- ESTIMATION -->
 				<section>
-					<h2>3. Story Points</h2>
-					<ul style="font-size:0.8em;">
+					<h1>Estimation</h1>
+					<ul>
+						<li>Why?</li>
+						<li>What?</li>
+						<li>How?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Why estimate?</h2>
+				</section>
+
+				<section>
+					<h2>Story Points</h2>
+					<ul>
 						<li>Estimates are done in releative, unitless values</li>
-						<li>You estimate only in relations, not absolutely</li>
-						<li>Estimation can be done</li>
-						<ul>
-							<li>By Planning Poker (for few or new stories)</li>
-							<li>By Affinity Estimation (for a complete product backlog)</li>
-							<li>By Magic Estimation (similar to Affinity Estimation)</li>
-						</ul>
-						<li>Why relative?</li>
-						<ul>
-							<li>Story points stay constant over time</li>
-							<li>The teams velocity can change</li>
-							<li>Story points normalize skill level</li>
-							<li>Story points normalize done level</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>3. Planning Poker</h2>
-						<ol>
-							<li>Product Owner presents and reads a new story</li>
-							<li>Every Development Team member chooses a card (1,2,3,5,8,13,20,40,100,?)</li>
-							<li>When everybody is ready, all cards are revealed</li>
-							<li>Are all cards in range of three (1-3, 2-5, 3-8, 5-13,...)?</li>
+						<li>You estimate only in relations, not absolutely
 							<ul>
-								<li>If yes, continue at step 1</li>
-								<li>If no, Players with highest and lowest cards discuss their views for a moment. Then continue with step 2.</li>
+								<li>Story points stay constant over time</li>
+								<li>The teams velocity can change</li>
+								<li>Story points normalize skill level</li>
+								<li>Story points normalize done level</li>
 							</ul>
-						</ol>
-					</section>
+						</li>
+						<li>Estimation can be done:
+							<ul>
+								<li>By Planning Poker (for few or new stories)</li>
+								<li>By Affinity Estimation (for a complete product backlog)</li>
+								<li>By Magic Estimation (similar to Affinity Estimation)</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 
-					<!-- ARTIFACTS -->
-					<section>
-						<img class="fragment fade-in scrumtipp"  src="img/scrum_tipp.png" />
-						<h2>4. Definition of Done</h2>
+				<section>
+					<h2>Planning Poker</h2>
+					<ol>
+						<li>Product Owner presents and reads a new story</li>
+						<li>Every Development Team member chooses a card (1,2,3,5,8,13,20,40,100,?)</li>
+						<li>When everybody is ready, all cards are revealed</li>
+						<li>Are all cards in range of three (1-3, 2-5, 3-8, 5-13,...)?</li>
 						<ul>
-							<li>Criteria for a software that is potentially shippable</li>
-							<li>Can you ship you software after the sprint? If not, what is missing?</li>
-							<li>Use the Definition of Done as a cheklist during Sprint Planning II</li>
-							<li>Make the DoD visible (nail it next to the task board)</li>
+							<li>If yes, continue at step 1</li>
+							<li>If no, Players with highest and lowest cards discuss their views for a moment. Then continue with step 2.</li>
 						</ul>
-					</section>
+					</ol>
+				</section>
 
-					<section>
-						<h2>4. Task Board</h2>
-						<table>
-							<tr>
-								<td style="font-size:0.6em;vertical-align:top;">
-									<ul>
-										<li>Task status and responsibility</li>
-										<li>Continuously updated: New Tasks are added as they are discovered</li>
-										<li>Reestimate remaining effort every day (up or down)</li>
-									</ul>
-								</td>
-								<td>
-									<img style="width:650px;"src="img/task_board.png">
-								</td>
-							</tr>
-						</table>
-					</section>
+				<!-- ARTIFACTS -->
+				<section>
+						<h1>Scrum Artifacts</h1>
+						<ul>
+							<li>Definition of Done</li>
+							<li>Task Board</li>
+							<li>Sprint Burndown</li>
+							<li>Velocity Chart</li>
+						</ul>
+				</section>
 
-					<section>
-						<h2>4. Task board</h2>
-						<div style="text-align:center;">
-							<img class="fragment fade-in scrumtipp"  src="img/scrum_tipp.png" />
-							<img style="height:550px;" src="img/taskBoard.png"/>
-						</div>
-					</section>
+				<section>
+					<h2>Definition of Done</h2>
+					<ul>
+						<li>Criteria for a software that is potentially shippable</li>
+						<li>Can you ship you software after the sprint? If not, what is missing?</li>
+						<li>Use the Definition of Done as a checklist during Sprint Planning II</li>
+						<li>Make the DoD visible (nail it next to the task board)</li>
+					</ul>
+				</section>
 
-					<section>
-						<h2>4. Sprint Burn-Down Chart</h2>
-						<table>
-							<tr>
-								<td style="font-size:0.6em;vertical-align:top;">
-									<ul>
-										<li>Daily summation of work remaining in Sprint</li>
-										<li>Often goes up before it goes down</li>
-										<li>Post for high visibility</li>
-										<li>Reflects team intuition</li>
-										<li>Not for anyone but the development team</li>
-									</ul>
-								</td>
-								<td>
-									<img style="width:650px;"src="img/sprint_burndown_chart.png">
-								</td>
-							</tr>
-						</table>
-					</section>
+				<section>
+					<h2>Task Board</h2>
+					<ul>
+						<img style="width:400px; float: right; margin-left: 10px" src="img/task_board.png">
+						<li>Task status and responsibility</li>
+						<li>Continuously updated: New Tasks are added as they are discovered</li>
+						<li>Reestimate remaining effort every day (up or down)</li>
+					</ul>
+				</section>
 
-					<section>
-						<h2>4. Velocity</h2>
-						<table >
-							<tr>
-								<td style="font-size:0.6em;vertical-align:top;">
-									<ul>
-										<li>Used by the Product Owner to provice forecasts</li>
-										<li>Used by the Development Team to gauge how much work to pull in a Sprint Planning meeting</li>
-									</ul>
-								</td>
-								<td>
-									<img style="width:650px;"src="img/velocity.png">
-								</td>
-							</tr>
-						</table>
-					</section>
+				<section>
+					<h2>Sprint Burn-Down Chart</h2>
+					<ul>
+						<img style="width:400px; float: right; margin-left: 10px" src="img/sprint_burndown.png">
+						<li>Daily summation of work remaining in Sprint</li>
+						<li>Often goes up before it goes down</li>
+						<li>Post for high visibility</li>
+						<li>Reflects team intuition</li>
+						<li>Not for anyone but the development team</li>
+					</ul>
+				</section>
 
-					<section>
-						<h2>4. Product/Release Burn-Down Chart</h2>
-						<table >
-							<tr>
-								<td style="font-size:0.6em;vertical-align:top;">
-									A Burn-Down chart shows <br />
-									<ul>
-										<li>What has been achieved</li>
-										<li>What is left to do</li>
-									</ul><br />
-									For a release, it shows remaining features to complete for a release
-								</td>
-								<td>
-									<img style="width:650px;"src="img/burndown_chart.png">
-								</td>
-							</tr>
-						</table>
-					</section>
+				<section>
+					<h2>Velocity</h2>
+					<ul>
+						<img style="width:400px; float: right; margin-left: 10px" src="img/velocity.png">
+						<li>Used by the Product Owner to provice forecasts</li>
+						<li>Used by the Development Team to gauge how much work to pull in a Sprint Planning meeting</li>
+					</ul>
+				</section>
 
-				</div>
-				<div class="footer">
-					<img src="img/cc_logo.png" class="cc_logo_footer" />
-				</div>
+				<section>
+					<h2>Product/Release Burn-Down Chart</h2>
+						<ul>
+							<img style="width:400px; float: right; margin-left: 10px" style="width:650px;"src="img/release_burndown.png">
+							<li>A Burn-Down chart shows
+								<ul>
+									<li>What has been achieved</li>
+									<li>What is left to do</li>
+								</ul>
+							</li>
+							<li>For a release, it shows remaining features to complete for a release</li>
+				</section>
+
 			</div>
-			<script>
+			<div class="footer">
+				<img src="img/cc_logo.png" class="cc_logo_footer" />
+			</div>
+		</div>
+		<script>
 
-			// Flil list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: false,
-				progress: true,
-				history: true,
-				center: true,
-				slideNumber: true,
+		// Flil list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: false,
+			progress: true,
+			history: true,
+			center: false,
+			slideNumber: true,
 
 
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Optional reveal.js plugin
-				dependencies: [
-					{ src: 'socket.io/socket.io.js', async: true },
-					{ src: 'plugin/notes-server/client.js', async: true },
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-			Reveal.addEventListener('slidechanged', function(event) {
-				if (Reveal.getState().indexh === 0 && Reveal.getState().indexv === 0){
-					document.querySelector('.reveal .footer').style.display = 'none';
-					document.querySelector('.reveal .slide-number').style.display = 'none';
-				} else{
-					document.querySelector('.reveal .footer').style.display = 'block';
-					document.querySelector('.reveal .slide-number').style.display = 'block';
-				}
+			// Optional reveal.js plugin
+			dependencies: [
+				{ src: 'socket.io/socket.io.js', async: true },
+				{ src: 'plugin/notes-server/client.js', async: true },
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+		Reveal.addEventListener('slidechanged', function(event) {
+			if (Reveal.getState().indexh === 0 && Reveal.getState().indexv === 0){
+				document.querySelector('.reveal .footer').style.display = 'none';
+				document.querySelector('.reveal .slide-number').style.display = 'none';
+			} else{
+				document.querySelector('.reveal .footer').style.display = 'block';
+				document.querySelector('.reveal .slide-number').style.display = 'block';
+			}
 
-			});
+		});
 
-			</script>
+		</script>
 
-		</body>
-	</html>
+	</body>
+</html>
