@@ -11,8 +11,8 @@
 
 ---
 
-## Agenda
 <!-- .slide: style="font-size: 0.7em" -->
+## Agenda
 * Introduction
  * Roles
  * Story & Backlog
@@ -44,7 +44,7 @@
 
 ***
 
-Story & Backlog
+## Story & Backlog
 
 ---
 
@@ -103,8 +103,8 @@ Story & Backlog
 
 ***
 
-## Retrospective
 <!-- .slide: style="font-size: 0.8em" -->
+## Retrospective
 
 Prime Directive: "Regardless of what we discover, we must understand and truly believe that everyone did the best job he or she could, given what was known at the time, his or her skills and abilities, the resources available, and the situation at hand."
 
