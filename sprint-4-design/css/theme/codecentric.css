@@ -228,6 +228,24 @@ body {
 .reveal table tr:last-child td {
   border-bottom: none; }
 
+.reveal table.no-border tr td,
+.reveal table tr.no-border td,
+.reveal table tr td.no-border {
+  border: 0;
+}
+
+.reveal table.text-center tr td,
+.reveal table tr.text-center td,
+.reveal table tr td.text-center {
+  text-align: center;
+}
+
+.reveal table.text-middle td,
+.reveal table tr.text-middle td,
+.reveal table tr td.text-middle {
+  vertical-align: middle;
+}
+
 .reveal sup {
   vertical-align: super; }
 

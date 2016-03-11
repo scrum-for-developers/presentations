@@ -46,120 +46,143 @@
 
 				<section data-background="img/background_title.jpg" data-state="intro">
 					<img src="img/cc_logo.png" class="cc_logo" />
-					<h2 class="heading">Scrum for developers - Sprint 1</h2>
+					<h2 class="heading">Scrum for developers - Sprint 4</h2>
 					<hr class="heading"/>
-					<h3 class="heading">Git, Maven & Jenkins</h3>
+					<h3 class="heading">Code Quality: Refactoring & Design</h3>
 				</section>
 
 				<section>
-					<h2>Version Control</h2>
+					<h2>Code Quality</h2>
 					<table style="font-size:0.7em;table-layout:fixed;">
 						<tr>
 							<td style="width:50%;">
 								Expectations:<br/>
 								<ul>
-									<li>Share my code with my peers</li>
-									<li>See what others contributed</li>
-									<li>Get new changes from others</li>
-									<li>Browse the codebase</li>
-									<li>Secure, but easy access</li>
-									<li>Tightly integrated in the IDE</li>
-									<li>Have my code backed up</li>
-									<li>Can revert changes when I make a mistake</li>
-									<li>Go back in time (virtually)</li>
-									<li>Experiment with out affecting others</li>
+									<li>Know useful design techniques</li>
+									<li>Write readable code</li>
+									<li>Refactor existing code when needed, using Eclipse instruments</li>
 								</ul>
 							</td>
 							<td class="dodbox" >Definition of Done:
 								<ul>
-									<li>sources are under version control</li>
+									<li>Code is maintainable by third persons</li>
 								</ul>
 							</td>
 						</tr>
 					</table>
-					<p>
-						Note: We will look more into version control in sprint 2 - especially
-						feature branches vs. trunk based development
-					</p>
 				</section>
 
 				<section>
-					<h3>Build & Dependendy Management</h3>
+					<h3>Why design is important</h3>
 					<table style="font-size:0.7em;">
 						<tr>
-							<td style="width:50%;">
-								Expectations:<br/>
+							<td style="width:50%; vertical-align: top;">
 								<ul>
-									<li>Quickly find and add new dependencies</li>
-									<li>Find out transitive dependencies</li>
-									<li>Detect dependency conflicts</li>
-									<li>All projects follow the same conventions</li>
-									<li>Allows self-contained CI</li>
+									<li>Design is the link between architecture (and everything else) and code</li>
+									<li>Without a solid design, code is neither comprehensible nor changeable</li>
+									<li>A good design is a crucial base for high productivity in terms of effectiveness (doing the right things) and efficiency (doing the things right)</li>
 								</ul>
 							</td>
-							<td class="dodbox" >Definition of Done:
-								<ul>
-									<li>projects follow conventions</li>
-									<li>dependencies are managed</li>
-									<li>no binaries in source repository</li>
-									<li class="former">sources are under version control</li>
-								</ul>
+							<td>
+								<img src="img/architecture-design-code.png" />
 							</td>
 						</tr>
 					</table>
 				</section>
 
-				<section>
-					<h2>Convention and automation</h2>
-					<h4>Convention over configuration - Standardized</h4>
-						<ul style="font-size:0.6em;">
-							<li>project structure</li>
-							<li>build process</li>
-							<li>release process</li>
-							<li>CI integration</li>
-						</ul>
-					<h4>Automation is necessary for short iterations. Steps to automate:</h4>
-						<ul style="font-size:0.6em;">
-							<li>Compile source code</li>
-							<li>Execute unit tests</li>
-							<li>Gather static code metrics</li>
-							<li>Package artifacts</li>
-							<li>Generate technical reports and documentation</li>
-							<li>Create versions and releases</li>
-							<li>Deploy to various target environments</li>
-							<li>Execute acceptance tests</li>
-						</ul>
+				<section data-background="img/where-to-start.png">
+					<h1 class="heading">Okay, but where do I start?</h1>
 				</section>
 
+				<section>
+					<h2>Start with a basic set of design principles</h2>
+					<table style="font-size:0.7em;">
+						<tr style="font-size:5em;" class="text-center no-border">
+							<td>S</td>
+							<td>O</td>
+							<td>L</td>
+							<td>I</td>
+							<td>D</td>
+						</tr>
+						<tr style="font-size: 2em; color: #42affa;" class="text-center no-border">
+							<td>SRP</td>
+							<td>OCP</td>
+							<td>LSP</td>
+							<td>ISP</td>
+							<td>DIP</td>
+						</tr>
+						<tr style="color: #345;" class="text-center no-border">
+							<td>Single Responsibility Principle</td>
+							<td>Open Closed Principle</td>
+							<td>Liskov Substitution Principle</td>
+							<td>Interface Segregation Principle</td>
+							<td>Dependency Inversion Principle</td>
+						</tr>
+					</table>
+				</section>
 
 				<section>
-					<h2>Continuous Integration</h2>
+					<h2>SOLID explained</h2>
 					<table style="font-size:0.7em;">
 						<tr>
-							<td style="width:50%;">
-								Expectations:<br/>
-								<ul>
-									<li>Fast feedback for everybody about integration status</li>
-									<li>pics up changes to version control automatically</li>
-									<li>uses same build environment as local developer</li>
-								</ul>
-							</td>
-							<td class="dodbox" >Definition of Done:
-								<ul>
-									<li>master branch is built on CI server</li>
-									<li class="former">stories are developed in branches</li>
-									<li class="former">version number is incremented</li>
-									<li class="former">release notes are updated</li>
-									<li class="former">production database is migrated (whithout loss of production data)</li>
-									<li class="former">projects follow conventions</li>
-									<li class="former">dependencies are managed</li>
-									<li class="former">no binaries in source repository</li>
-									<li class="former">sources are under version control</li>
-								</ul>
-							</td>
+							<th style="width: 10%;"><h4>SRP</h4></th>
+							<td style="width: 30%;">Single Responsibility Principle</td>
+							<td style="width: 60%;">A class should have one, and only one, reason to change</td>
+						</tr>
+						<tr>
+							<td><h4>OCP</h4></td>
+							<td>Open Closed Principle</td>
+							<td>Open for extension, closed for modification: You should be able to extend a classes behavior, without modifying it</td>
+						</tr>
+						<tr>
+							<td><h4>LSP</h4></td>
+							<td>Liskov Substitution Principle</td>
+							<td>Derived classes must be substitutable for their base classes</td>
+						</tr>
+						<tr>
+							<td><h4>ISP</h4></td>
+							<td>Interface Segregation Principle</td>
+							<td>Clients should not be forced to depend upon interfaces that they do not use: Make fine grained interfaces that are client specific</td>
+						</tr>
+						<tr>
+							<td><h4>DIP</h4></td>
+							<td>Dependency Inversion Principle</td>
+							<td>Depend on abstractions, not on concretions: Abstractions should not depend upon details. Details should depend upon abstractions</td>
 						</tr>
 					</table>
 				</section>
+
+				<section>
+					<h2>Single Response Principle</h2>
+					<table style="font-size:0.7em; width: 100%;">
+						<tr>
+							<td><img src="img/srp1.gif" /></td>
+						</tr>
+						<tr>
+							<td style="text-align: right;"><img src="img/srp2.gif" /></td>
+						</tr>
+					</table>
+				</section>
+
+			<section>
+				<h2>Liskov Substitution Principle</h2>
+				<table style="font-size:0.7em; width: 100%;">
+					<tr>
+						<td class="text-middle"><img src="img/lsp1.png" /></td>
+						<td class="text-middle"><img src="img/lsp2.png" /></td>
+					</tr>
+				</table>
+			</section>
+
+			<section>
+				<h2>Dependency Inversion Principle</h2>
+				<table style="font-size:0.7em; width: 100%;">
+					<tr>
+						<td style="vertical-align: top;"><img src="img/dip1.png" /></td>
+						<td style="vertical-align: top;"><img src="img/dip2.png" /></td>
+					</tr>
+				</table>
+			</section>
 
 			</div>
 			<div class="footer">
