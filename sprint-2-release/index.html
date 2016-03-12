@@ -34,289 +34,51 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style type="text/css">
+		.reveal table {
+			margin: auto;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		.reveal table th {
+			text-align: left;
+			padding: 0.2em 0.5em 0.2em 0.5em;
+			border-bottom: 1px solid;
+			font-weight: bold;
+		}
+
+		.reveal table td {
+			border: 0px
+		}
+
+		.reveal pre code {
+			font-size: 0.7em;
+		}
+
+		</style>
 	</head>
 
 	<body>
 
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="img/background_title.jpg" data-state="intro">
-					<img src="img/cc_logo.png" class="cc_logo" />
-					<h2 class="heading">Scrum for developers - Sprint 2</h2>
-					<hr class="heading"/>
-					<h3 class="heading">Release Management</h3>
-				</section>
 
-				<section>
-					<h2>Agenda</h2>
-					<div>
-						<ol>
-							<li>Unfinished Features</li>
-							<li>Version Numbers & Release Artifacts</li>
-							<li>Release Notes</li>
-							<li>Database Migration</li>
-						</ol>
-					</div>
-				</section>
-
-				<section>
-					<h3>Release Management (TODO: What is part of a "release")</h3>
-					<table style="font-size:0.7em;">
-						<tr>
-							<td style="width:50%;">
-								Expectations:<br/>
-								<ul>
-									<li>A meaningful version number</li>
-									<li>Handle unfinished stories</li>
-									<li>Installation and migration instructions are maintained</li>
-									<li>Release notes that communicate what's new in each release</li>
-								</ul>
-							</td>
-							<td class="dodbox" >Definition of Done:
-								<ul>
-									<li>no unfinished features in release</li>
-									<li>version number is incremented</li>
-									<li>release notes are updated</li>
-									<li>production database is migrated (whithout loss of production data)</li>
-									<li class="former">projects follow conventions</li>
-									<li class="former">dependencies are managed</li>
-									<li class="former">no binaries in source repository</li>
-									<li class="former">sources are under version control</li>
-								</ul>
-							</td>
-						</tr>
-					</table>
-				</section>
-
-				<section>
-					<h2>1. Feature Branches</h2>
-					<div>TODO: We do not want unfinished features in Releases</div>
-					<div> -> Feature-Branches?</div>
-				</section>
-
-				<section>
-					<h2>1. Feature Branch vs. Trunk Based Development</h2>
-					<table style="font-size:0.55em;">
-						<tr>
-							<th width="50%"><h3>Feature Branches</h3></th>
-							<th width="50%"><h3>Trunk Based Development</h3></th>
-						</tr>
-						<tr>
-							<td>What happens if the first story is the one that could not be finished?</td>
-							<td>Unfinished Stories are a problem:<br/>
-								<ul>
-									<li>Rollback?</li>
-									<li>Secret Delivery? ("Won't Hurt")</li>
-								</ul>
-							</td>
-						</tr>
-						<tr>
-							<td>Easy branches and merges with a DVCS. Like Mercurial or Git</td>
-							<td>Unfinished Features<br/>
-								- Solution: Feature Toggles?
-							</td>
-						</tr>
-						<tr>
-							<td >Continuous Integration:<br/>
-								<ul>
-									<li>Make Stories small enough</li>
-									<li>Have CI for every branch</li>
-								</ul>
-							</td>
-							<td/>
-						</tr>
-						<tr>
-							<td>Merging is a PITA<br/></td><td/>
-						</tr>
-						<tr>
-							<td >Every commit should be integrated immediately<br/></td><td/>
-						</tr>
-						<tr>
-							<td >Martin Fowler: Inhibits refactoring (big, daring merge coming ahead!)<br/></td><td/>
-						</tr>
-					</table>
-				</section>
-
-				<section>
-				<h2>2. Version Numbers</h2>
-					<h4>major.sprint.maintenance &#8594; 1.2.0</h4>
-					<table style="font-size:0.6em;">
-						<tr>
-							<th><h4>Version Component</h4></th>
-							<th><h4>Meaning</h4></th>
-						</tr>
-						<tr>
-							<td>Major</td>
-							<td>Gets incremented with every release. Backwards compatibility is often broken between releases, but should be documented. <br/>Starts at 1.</td>
-						</tr>
-						<tr>
-							<td>Sprint</td>
-							<td>Every sprint has its own number.<br/>Starts at 1.</td>
-						</tr>
-						<tr>
-							<td>Maintenance</td>
-							<td>
-								Increases with every bugfix release. All Releases after this must include
-								all previous updates.<br/>Starts at 0.
-							</td>
-						</tr>
-					</table>
-				</section>
-
-				<section>
-					<h2>2. Release Process with maven</h2>
-					<h4>Steps for a new release (at the end of each sprint)</h4>
-					<ul style="font-size:0.7em;">
-						<li>Set Version in all pom.xml files to the next release number (e.g. from 1.4.0-SNAPSHOT to 1.4.0)</li>
-						<li>Build project (to check if everything is working)</li>
-						<li>Commit and push (make sure you are on the master branch)</li>
-						<li>Create tag (and push it)</li>
-						<li>Let Jenkins build and deploy release artifacts</li>
-					</ul>
-					<h4>To restart work on a new release (at the start of the new Sprint)</h4>
-					<ul style="font-size:0.7em;">
-						<li>Set version in all pom.xml files to the next SNAPSHOT number (e.g. from 1.4.0 to 1.5.0-SNAPSHOT)</li>
-						<li>Commit and push</li>
-						<li>Merge changes into all open feature branches</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Why release notes?</h2>
-					TODO: See later slide about release migration
-				</section>
-
-				<section>
-					<h2>3. Maven managed Release notes</h2>
-					<ul style="font-size:0.6em;">
-						<li>Maven Changes Plugin generates release note reports and integrates it to the project Maven site</li>
-						<li>Sends the release notes via email as a release announcement</li>
-						<li>Extracts changes from your issue management system automatically</li>
-						<li>Extracts changes from changes.xml file in the project sources</li>
-					</ul>
-					<table style="font-size:0.6em;width:100%;">
-						<tr>
-							<th><h4>Maven Goal</h4></th>
-							<th><h4>Description</h4></th>
-						</tr>
-						<tr>
-							<td>changes:announcement-generate</td>
-							<td>Generate a release announcement</td>
-						</tr>
-						<tr>
-							<td>changes:announcement-mail</td>
-							<td>Send a release announcement via email</td>
-						</tr>
-						<tr>
-							<td>changes:changes-report</td>
-							<td>Create a report with changes between different releases of the project</td>
-						</tr>
-						<tr>
-							<td>changes:jira-report</td>
-							<td>Create a report from the issues in a remote JIRA instance</td>
-						</tr>
-					</table>
-				</section>
-
-				<section>
-					<h2>3. Release Notes Sample</h2>
-					<img src="img/release_notes_sample.png"/>
-				</section>
-
-
-				<section>
-					<h2>4. Release migration</h2>
-					<ul style="font-size:0.6em;">
-						<li>The assumptions an application makes about its environment will change</li>
-						<li>Migration can become necessary after every Sprint</li>
-						<ul>
-							<li>Changes to the database schema</li>
-							<ul>
-								<li>Data needs to be migrated</li>
-								<li>Data migration scripts must be tested</li>
-							</ul>
-							<li>Environment configuration changed</li>
-							<ul>
-								<li>JNDI bindung, JMS resources, environment variables, etc.</li>
-							</ul>
-							<li>Environment itself changed</li>
-							<ul>
-								<li>Platform is updated</li>
-								<li>Systems that are used are updated (or removed)
-								</ul>
-							</ul>
-							<li>Every Release requires an installation and/or migration guide</li>
-							<li>Notes should contain the full history (to allow skipping versions)</li>
-						</ul>
-					</ul>
-				</section>
-
-				<section>
-					<h2>4. Automated DB Migration</h2>
-					<ul style="font-size: 0.6em;">
-						<li>“Liquibase is an open source (Apache 2.0 Licensed), database-independent library for tracking, managing and applying database changes”</li>
-						<li>Each database change is version controlled and a part of the sources</li>
-						<li>XML Style Changeset descriptions</li>
-						<li>Automated rollback support for most commands</li>
-					</ul>
-					<pre>
-						<code class="xml" data-trim>
-							&lt;changeSet id="1.4.0-borrowing" author="daniel.arndt"&gt;
-							&lt;createTable tableName="Borrowing"&gt;
-							&lt;column name="id" autoIncrement="true" type="bigint(20)"&gt;
-							&lt;constraints primaryKey="true" nullable="false" /&gt;
-							&lt;/column&gt;
-							...
-							&lt;/createTable&gt;
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>4. Automated DB Migration (2)</h2>
-					<p>Various integration options (Ant, Maven, Command Line, Spring, ServletListener, ...)</p>
-					<table style="font-size:0.6em; width:100%">
-						<tr>
-							<th><h4>Some Maven Goals</h4></th>
-							<th><h4>Description</h4></th>
-						</tr>
-						<tr>
-							<td>liquibase:update</td>
-							<td>Update the database to the latest version</td>
-						</tr>
-						<tr>
-							<td>liquibase:updateSql</td>
-							<td>Generate SQL for updating to the latest version</td>
-						</tr>
-						<tr>
-							<td>liquibase:tag</td>
-							<td>Create a tag in the database for rolling back later</td>
-						</tr>
-						<tr>
-							<td>liquibase:rollback</td>
-							<td>rollback changesets (last, to date, to tag)</td>
-						</tr>
-						<tr>
-							<td>liquibase:status</td>
-							<td>Display status of target database</td>
-						</tr>
-						<tr>
-							<td>liquibase:diff</td>
-							<td>Diff two databases or database to hibernate config</td>
-						</tr>
-						<tr>
-							<td>liquibase:help</td>
-							<td>Description of all Maven goals</td>
-						</tr>
-					</table>
+				<section data-markdown="slides.md"
+				        data-separator="^---$"
+				        data-separator-vertical="^\*\*\*$"
+				        data-notes="^Note:"
+				        data-charset="utf-8">
 				</section>
 
 			</div>
+
 			<div class="footer">
 				<img src="img/cc_logo.png" class="cc_logo_footer" />
 			</div>
+
 		</div>
 
 		<script>
@@ -327,10 +89,8 @@
 			controls: false,
 			progress: true,
 			history: true,
-			center: true,
+			center: false,
 			slideNumber: true,
-
-
 
 			transition: 'slide', // none/fade/slide/convex/concave/zoom
 
@@ -341,7 +101,7 @@
 				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 				{ src: 'plugin/zoom-js/zoom.js', async: true },
 				{ src: 'plugin/notes/notes.js', async: true }
 			]
