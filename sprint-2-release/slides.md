@@ -35,7 +35,7 @@
 | Continuous integration is hard to set up                | Database migration is a difficult                              |
 <!-- .element: style="font-size: 0.7em" -->
 
----
+***
 
 ### Dealing with unfinished features
 
@@ -56,7 +56,7 @@ Given a version number **MAJOR.MINOR.PATCH**, increment the:
 
 See http://semver.org/
 
----
+***
 
 ### ScrumForDevelopers Versioning
 
@@ -70,7 +70,7 @@ See http://semver.org/
 **SNAPSHOT versions are only for development.<br/>Releases with SNAPSHOT-versions are not allowed**
 <!-- .element: style="font-size: 0.7em" -->
 
----
+***
 
 ### Version numbers with maven
 <!-- .slide: style="font-size: 0.7em" -->
@@ -89,7 +89,7 @@ See http://semver.org/
 2. Commit and push
 3. Merge changes into all open feature branches
 
----
+***
 
 ### Version numbers
 
@@ -108,7 +108,7 @@ See http://semver.org/
 * Deploy same binaries to multiple environments
 * Depend only on binaries, not on code (because every build can produce slightly different binaries - even with the same code)
 
----
+***
 
 ### Release artifacts
 
@@ -135,7 +135,7 @@ See http://semver.org/
 | changes:changes&#8209;report | Create a report with changes between different releases of the project |
 | changes:github&#8209;report | Create a report from the issues from GitHub |
 
----
+***
 
 ### Release notes - changes.xml
 
@@ -160,12 +160,12 @@ See http://semver.org/
 </document>
 ```
 
----
+***
 
 ### Release notes - example
 ![](img/release_notes_sample.png)
 
----
+***
 
 ### Release notes
 
@@ -187,7 +187,7 @@ See http://semver.org/
 * Liquibase "remembers" which changes were already applied
 * Modification of already applied changes is not allowed
 
----
+***
 
 ### Liquibase maven integration
 
@@ -202,7 +202,7 @@ See http://semver.org/
 | liquibase:help | Description of all Maven goals |
 <!-- .element: style="font-size: 0.7em" -->
 
----
+***
 
 ### Liquibase example
 
@@ -228,7 +228,7 @@ CREATE TABLE book (
 );
 ```
 
----
+***
 
 <div class="dodbox">
 **Definition of Done**
