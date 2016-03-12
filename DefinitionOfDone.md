@@ -11,10 +11,11 @@
 
 ---
 
-* (Sprint 2) **stories are developed in branches**
-* (Sprint 2) **version number is incremented**
 * (Sprint 2) **automated database migration works**
 * (Sprint 2) **release notes are updated**
+* (Sprint 2) **release artifacts are in artifactory**
+* (Sprint 2) **version number is incremented**
+* (Sprint 2) **stories are developed in branches**
 
 ---
 
