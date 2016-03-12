@@ -98,7 +98,7 @@ A **user story** is a ...
 * PO + development team
 * PO presents user stories and priorities
 * Development team and PO discuss user stories and pin down acceptance criteria
-* Development team makes a forecast, what functionality it plans to achieve during the next sprint (**"forecast"**)
+* Development team makes a **forecast**, what functionality it plans to achieve during the next sprint
 
 ***
 
@@ -221,7 +221,7 @@ Prime Directive: "Regardless of what we discover, we must understand and truly b
 
 ## Velocity
 
-* Used by the Product Owner to provice forecasts ![](img/velocity.png) <!-- .element: style="width:400px; float: right; margin-left: 10px" -->
+* Used by the Product Owner to provide forecasts ![](img/velocity.png) <!-- .element: style="width:400px; float: right; margin-left: 10px" -->
 * Used by the Development Team to gauge how much work to pull in a Sprint Planning meeting
 
 ***
