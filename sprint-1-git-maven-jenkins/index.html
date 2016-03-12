@@ -56,31 +56,27 @@
 					<table style="font-size:0.7em;table-layout:fixed;">
 						<tr>
 							<td style="width:50%;">
-								Expectations:<br/>
+								<strong>Advantages:</strong>
 								<ul>
 									<li>Share my code with my peers</li>
 									<li>See what others contributed</li>
 									<li>Get new changes from others</li>
 									<li>Browse the codebase</li>
-									<li>Secure, but easy access</li>
-									<li>Tightly integrated in the IDE</li>
-									<li>Have my code backed up</li>
-									<li>Can revert changes when I make a mistake</li>
 									<li>Go back in time (virtually)</li>
 									<li>Experiment with out affecting others</li>
 								</ul>
 							</td>
-							<td class="dodbox" >Definition of Done:
+							<td class="dodbox"><strong>Definition of Done:</strong>
 								<ul>
 									<li>sources are under version control</li>
 								</ul>
 							</td>
 						</tr>
 					</table>
-					<p>
-						Note: We will look more into version control in sprint 2 - especially
+					<p><em style="font-size: 0.5em">
+						We will look more into version control in sprint 2 - especially
 						feature branches vs. trunk based development
-					</p>
+					</em></p>
 				</section>
 
 				<section>
@@ -88,7 +84,7 @@
 					<table style="font-size:0.7em;">
 						<tr>
 							<td style="width:50%;">
-								Expectations:<br/>
+								<strong>Advantages:</strong>
 								<ul>
 									<li>Quickly find and add new dependencies</li>
 									<li>Find out transitive dependencies</li>
@@ -97,11 +93,9 @@
 									<li>Allows self-contained CI</li>
 								</ul>
 							</td>
-							<td class="dodbox" >Definition of Done:
+							<td class="dodbox"><strong>Definition of Done:</strong>
 								<ul>
-									<li>projects follow conventions</li>
-									<li>dependencies are managed</li>
-									<li>no binaries in source repository</li>
+									<li>dependencies are managed via maven</li>
 									<li class="former">sources are under version control</li>
 								</ul>
 							</td>
@@ -110,50 +104,22 @@
 				</section>
 
 				<section>
-					<h2>Convention and automation</h2>
-					<h4>Convention over configuration - Standardized</h4>
-						<ul style="font-size:0.6em;">
-							<li>project structure</li>
-							<li>build process</li>
-							<li>release process</li>
-							<li>CI integration</li>
-						</ul>
-					<h4>Automation is necessary for short iterations. Steps to automate:</h4>
-						<ul style="font-size:0.6em;">
-							<li>Compile source code</li>
-							<li>Execute unit tests</li>
-							<li>Gather static code metrics</li>
-							<li>Package artifacts</li>
-							<li>Generate technical reports and documentation</li>
-							<li>Create versions and releases</li>
-							<li>Deploy to various target environments</li>
-							<li>Execute acceptance tests</li>
-						</ul>
-				</section>
-
-
-				<section>
 					<h2>Continuous Integration</h2>
 					<table style="font-size:0.7em;">
 						<tr>
 							<td style="width:50%;">
-								Expectations:<br/>
+								<strong>Advantages:</strong>
 								<ul>
 									<li>Fast feedback for everybody about integration status</li>
-									<li>pics up changes to version control automatically</li>
-									<li>uses same build environment as local developer</li>
+									<li>Picks up changes to version control automatically</li>
+									<li>Uses same build environment as local developer</li>
+									<li>Single point of truth (no more "works on my machine")</li>
 								</ul>
 							</td>
-							<td class="dodbox" >Definition of Done:
+							<td class="dodbox"><strong>Definition of Done:</strong>
 								<ul>
-									<li>master branch is built on CI server</li>
-									<li class="former">stories are developed in branches</li>
-									<li class="former">version number is incremented</li>
-									<li class="former">release notes are updated</li>
-									<li class="former">production database is migrated (whithout loss of production data)</li>
-									<li class="former">projects follow conventions</li>
+									<li>project is built on CI-server</li>
 									<li class="former">dependencies are managed</li>
-									<li class="former">no binaries in source repository</li>
 									<li class="former">sources are under version control</li>
 								</ul>
 							</td>

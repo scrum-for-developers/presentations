@@ -14,8 +14,8 @@
 <!-- .slide: style="font-size: 0.7em" -->
 ## Agenda
 * Introduction
- * Roles
- * Story & Backlog
+ * Scrum Roles
+ * User Story & Backlog
 * Meetings
  * Refinement
  * Planning I+II
@@ -34,17 +34,24 @@
 ---
 
 # Introduction
-### Roles
+### Scrum Roles
 ### Story & Backlog
 
 ***
 
-## Scrum Team
+## Scrum Roles
 ![](img/scrum_team.png) <!-- .element: style="width: 700px;" -->
 
 ***
 
 ## Story & Backlog
+
+> A **user story** is a description in the everyday language of the end user or user of a system that captures what a user does or needs to do as part of his or her job function.  It captures the **"who"**, **"what"** and **"why"** of a requirement in a simple, concise way.
+
+* The product backlog is an ordered (prioritized) list of requirements.
+* The product owner is responsible for the product backlog.
+* The product backlog "lives" (priorities change, new stories added, irrelevant stories removed).
+* The sprint backlog contains the stories selected for one sprint.
 
 ---
 
@@ -69,20 +76,25 @@
 
 ## Backlog Refinement
 
+* Product owner presents product backlog to the development team.
+* Backlog items are discussed, revised, reviewed.
+* Development team estimates backlog items.
+
+**Goals:** Development team builds up understanding of future requirements.
+
 ***
 
 ## Sprint Planning
 
-* Part I
- * PO presents stories and priorities
- * Development-Team and PO discuss, what exactly is part of the story, what might be optional, etc.
- * Development-Team makes a forecast, what functionality it plans to achieve during the next sprint
-* Part II
- * TODO: Task breakdown
- * It's a design meeting
+* Part I (PO + development team)
+ * PO presents user stories and priorities
+ * Development team and PO discuss user stories and pin down acceptance criteria
+ * Development team makes a forecast, what functionality it plans to achieve during the next sprint (**"forecast"**)
+* Part II (development team only)
+ * Team breaks down stories in smaller tasks
+ * Develop necessary design/architecture
  * Sketch the solution on the wall, flipchart, etc.
  * Draw GUI mock-ups (if not already done so by UX)
- * Have those sketches visible during the sprint
  * Do some research or look in the code base if necessary
  * Or time-box some research later, have a later task as a place holder
 
@@ -92,7 +104,7 @@
 
 * Purpose?
  * Development Team: Experience competence
- * Product Owner: Get feedback from stakeholders
+ * Product Owner: Get feedback from **stakeholders**
 * Product Owner
  * Communicates current status and makes forecast on future features
 * Team
