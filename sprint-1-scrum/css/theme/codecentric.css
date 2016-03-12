@@ -40,7 +40,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .dodbox {
   background-color: #1E9E91;
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding: 10px !important ;  }
 
 .reveal .slides {
   text-align: left; }
@@ -64,12 +65,6 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .okgo {
   width: 48%;
   border: none; }
-
-.scrumtipp {
-  position: absolute;
-  width: 350px;
-  left: 700px;
-  top: -50px; }
 
 /*********************************************
  * GLOBAL STYLES
