@@ -102,7 +102,7 @@ A **user story** is a ...
 
 ***
 
-## Sprint Planning - Part I
+## Sprint Planning - Part II
 * Development team only
 * Team breaks down stories in smaller tasks
 * Develop necessary design/architecture
