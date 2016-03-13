@@ -1,6 +1,6 @@
 <!-- .slide: data-background="img/background_title.jpg" data-state="intro" class="center" -->
 ![](img/cc_logo.png) <!-- .element: class="cc_logo" -->
-## Scrum for developers - Sprint 2 <!-- .element: class="heading" -->
+## Scrum for developers - Sprint 3 <!-- .element: class="heading" -->
 ----
 ### Test Driven Development <!-- .element: class="heading" -->
 
