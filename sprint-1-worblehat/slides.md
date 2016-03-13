@@ -5,8 +5,6 @@
 ### Worblehat <!-- .element: class="heading" -->
 ![](img/Worblehat.jpg)
 ---
-<!-- .slide: style="font-size: 0.7em" -->
----
 
 ## Agenda <!-- .slide: class="center" style="text-align: center"-->
 * Model
