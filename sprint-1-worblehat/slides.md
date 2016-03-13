@@ -3,7 +3,7 @@
 ## Scrum for developers - Sprint 1 <!-- .element: class="heading" -->
 ----
 ### Worblehat <!-- .element: class="heading" -->
-![](img/Worblehat.jpg)
+![](img/worblehat.jpg)
 ---
 
 ## Agenda <!-- .slide: class="center" style="text-align: center"-->
