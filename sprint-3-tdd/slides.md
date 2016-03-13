@@ -50,4 +50,3 @@ Acceptance criteria:
 * release artifacts are deployed in artifactory <!-- .element: class="former" -->
 * version number is incremented <!-- .element: class="former" -->
 * stories are developed in (feature) branches <!-- .element: class="former" -->
-</div>
