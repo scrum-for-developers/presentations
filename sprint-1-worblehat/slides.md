@@ -15,7 +15,7 @@
 ---
 
 ## Model <!-- .slide: class="center" style="text-align: center"-->
-![](img/Worblehat-model.png)
+![](img/worblehat-model.png)
 
 ### Architectural overview
-![](img/Worblehat-architecture.png)
+![](img/worblehat-architecture.png)
