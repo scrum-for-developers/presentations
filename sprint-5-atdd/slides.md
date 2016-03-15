@@ -10,8 +10,8 @@
 
 <div class="dodbox">
 **Definition of Done**
-* integration of testing tools
-* new acceptance test, based on User Story
+* acceptance tests get executed
+* acceptance tests are green (blue)
 * sonar is green <!-- .element: class="former" -->
 * code is developed test first <!-- .element: class="former" -->
 * automated database migration works <!-- .element: class="former" -->
