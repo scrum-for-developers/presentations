@@ -8,8 +8,6 @@
 
 ### Definition of Done
 
-* Definition of Done
-
 <div class="dodbox">
 **Definition of Done**
 * integration of testing tools
