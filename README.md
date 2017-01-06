@@ -6,6 +6,8 @@ This is still work in progress.
 
 What I want to do is rebuild the scrum for developers presentation with reveal.js.
 
+Available at [Github Pages](https://scrum-for-developers.github.io/presentations/)
+
 ## Installation instructions
 
 To look at it, just open the index.html.
