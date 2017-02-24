@@ -37,8 +37,7 @@ Acceptance criteria:
 
 * Until four weeks (28 days) --> 0 €
 * In the fith week (29 - 35 days) --> 1€
-* In the sixth week (36 - 42 days) --> 2€
-* Every week after that (>=43 days) --> 2€ + 3€ for every additional week
+* Every week after that (>=36 days) --> 2€ + 2€ for every additional week
 
 ---
 
