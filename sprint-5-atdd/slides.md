@@ -4,10 +4,6 @@
 #### Acceptance Test Driven Development (ATDD)
  <!-- .element: class="heading" -->
 
-#
-#### Speaker: Simon Norra <!-- .element: class="heading" -->
-#### March 14th, 2017 <!-- .element: class="heading" -->
-
 ---
 
 ### Agenda
@@ -26,10 +22,10 @@
 
 * Requirements are misunderstood
 * Obvious things are not obvious
-* Wrong assumptions
+* Wrong assumptions<p/>
 * Specification
   * does not reflect implementation
-  * has gaps and is inconsistent
+  * has gaps and is inconsistent<p/>
 * The most important information in the business specification is ...
 
 <div class="dodbox">
@@ -64,11 +60,11 @@
 
 ### Agile Acceptance Testing
 
-* Use real examples to build a common understanding and vocabular (DDD: "ubiquitous language")
-* Choose a set of these examples for the specification and their acceptance tests
-* Automate the verification of the acceptance tests
-* Focus the software development on the "green" of the acceptance tests
-* Use the set of acceptance tests to discuss future change requests
+1. Use real examples to build a common understanding and vocabular (DDD: "ubiquitous language")
+2. Choose a set of these examples for the specification and their acceptance tests
+3. Automate the verification of the acceptance tests
+4. Focus the software development on the "green" of the acceptance tests
+5. Use the set of acceptance tests to discuss future change requests
 
 ---
 
@@ -86,10 +82,10 @@
 
 * User Stories
   * Who? What? When?
-  * Encourage discussion
+  * Encourage discussion<p/>
 * Executable specification
   * Result of the discussion
-  * Common understanding of all participants (PO, Dev, QA, ...)
+  * Common understanding of all participants <br/>(PO, Dev, QA, ...)
 
 ---
 <!-- .slide: data-background="img/background_title.jpg" class="center" -->
