@@ -20,6 +20,6 @@ the npm version. With future versions there are conflicts. So just run a
 python http server:
 
 * With Python2:
-`python -m simpleHTTPServer`
+`python -m SimpleHTTPServer`
 * With Python3:
 `python -m http.server`
