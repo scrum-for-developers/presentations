@@ -8,7 +8,6 @@
 
 ### Agenda
 * Why should we do acceptance testing?
-* How can we get there?
 * How can we do it?
 * Definition of Done
 
@@ -54,44 +53,54 @@
 
 ---
 <!-- .slide: data-background="img/background_title.jpg" class="center" -->
-### How can we get there? <!-- .element: class="heading" -->
+### How can we do it? <!-- .element: class="heading" -->
 
 ---
 
-### Agile Acceptance Testing
+### Worblehat ATT Technology Stack
 
-1. Use real examples to build a common understanding and vocabular (DDD: "ubiquitous language")
-2. Choose a set of these examples for the specification and their acceptance tests
-3. Automate the verification of the acceptance tests
-4. Focus the software development on the "green" of the acceptance tests
-5. Use the set of acceptance tests to discuss future change requests
+![](img/logos_tools.png)
+
+---
+<!-- .slide: data-background="img/background_title.jpg" class="center" -->
+#### Let us dig into some examples ... <!-- .element: class="heading" -->
 
 ---
 
-### What executable specifications are NOT
+### Example Story #1
 
-* No scripts
-  * But Rules
-* Do not **replace** exploratory testing
-  * But allows you to invest more time into testing corner cases
-* No UI Tests
+As a library manager, I want to add books through the website, 
+so that I can add books to the library.
+
+Acceptance criteria:
+
+* A book can be added with the following properties:<br />
+isbn, author, title, edition, year
+* The added book is persisted and can be found in the book list.
 
 ---
 
-### User stories and executable specification work hand in hand
+### Example Story #2
+
+As a user, I want to borrow an interesting book, 
+so that I can take a book home for further reading.
+
+Acceptance criteria:
+
+* With his e-mail, a user is able to borrow a book by isbn.
+* A user could only borrow one book by isbn. An error message 
+should be shown, when he tries to borrow the same book as well.
+
+---
+
+### Acceptance Test Stories<br /> do reflect User Stories
 
 * User Stories
   * Who? What? When?
   * Encourage discussion<p/>
-* Executable specification
+* Acceptance Test Story
   * Result of the discussion
   * Common understanding of all participants <br/>(PO, Dev, QA, ...)
-
----
-<!-- .slide: data-background="img/background_title.jpg" class="center" -->
-### How can we do it? <!-- .element: class="heading" -->
-#
-#### Let us dig into the code! <!-- .element: class="heading" -->
 
 ---
 
@@ -101,10 +110,3 @@
 **Definition of Done**
 * acceptance tests get executed
 * acceptance tests are green (blue)
-* (sonar is green) <!-- .element: class="former" -->
-* code is developed test first <!-- .element: class="former" -->
-* automated database migration works <!-- .element: class="former" -->
-* release notes are updated <!-- .element: class="former" -->
-* release artifacts are deployed in artifactory <!-- .element: class="former" -->
-* version number is incremented <!-- .element: class="former" -->
-* stories are developed in (feature) branches <!-- .element: class="former" -->
