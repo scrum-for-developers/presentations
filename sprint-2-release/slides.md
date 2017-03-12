@@ -213,19 +213,26 @@ See http://semver.org/
 </databaseChangeLog>
 ```
 
-```sql
--- liquibase formatted sql
-
--- changeset action:create_table_books
-CREATE TABLE book (
-  id BIGINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  title VARCHAR(255),
-  author VARCHAR(255),
-  edition VARCHAR(255),
-  isbn VARCHAR(255),
-  year_of_publication INT,
-  UNIQUE (isbn)
-);
+```xml
+<changeSet id="1.0-borrowing" author="daniel.arndt">
+    <createTable tableName="borrowing">
+      <column name="id" autoIncrement="true" type="bigint(20)">
+        <constraints primaryKey="true" nullable="false" />
+      </column>
+      <column name="borrow_date" type="date">
+        <constraints nullable="true" />
+      </column>
+      <column name="borrower_email_address" type="varchar(255)">
+        <constraints nullable="true" />
+      </column>
+      <column name="borrowed_book_id" type="bigint(20)">
+        <constraints nullable="true" />
+      </column>
+    </createTable>
+    <addForeignKeyConstraint constraintName="FK_BOOK"
+                             referencedTableName="book" baseColumnNames="borrowed_book_id"
+                             baseTableName="borrowing" referencedColumnNames="id" />
+  </changeSet>
 ```
 
 ***
