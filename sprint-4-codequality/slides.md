@@ -8,9 +8,9 @@
 
 ### Expectations
 
-Get a nose for smelling code
-Write readable code
-Refactor existing code when needed, using IntelliJ instruments
+- Get a nose for smelling code
+- Write readable code
+- Refactor existing code when needed, using IntelliJ instruments
 
 ---
 
@@ -23,28 +23,43 @@ Refactor existing code when needed, using IntelliJ instruments
     * Productivity on serving business needs goes down
    
      
-![](img/tdd-cycle.png)
+![](img/quality_productivity.png)
      
+---
 
+### Clean code attitude
+
+- Feel responsible for your code.
+- Be open for advice.
+- Make yourself write clean code.
+- Also improve/fix legacy code where advisable .
+  “Leave the campground better than you found it”
      
-     
+---
+
+Clean Code  - A Handbook of Agile Software Craftsmanship  - Robert C. Martin
+
+(ISBN-13: 978-0-13-235088-4)
+
+A great set of advice/rules for writing good code
+
+<!-- LeBlanc’s law: “Later equals never”  (“Later I will improve my code!”) -->
+
+
 ---
 
 ### Live Coding
 
-Write (unit-)tests for the class `StandardBookService`.
+  
+---
 
-Idea shortcut to create test class (Windows/Linux): 
+### Clean code – measure code quality
 
-`Ctrl+Shift+T`
-
-or 
-
-1. `Alt+Enter` with cursor on the class we want to test
-2. select "Create Test" and hit Enter
+![](img/quality_wtf_per_minute.jpeg)
 
 ---
 
 <div class="dodbox">
 **Definition of Done**
 * code is maintainable by third persons
+* sonar is green: no blockers or criticals, test coverage > 60 %
