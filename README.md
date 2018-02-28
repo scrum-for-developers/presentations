@@ -1,23 +1,10 @@
 # codecentric scrum for developers presentation
 
-Built with reveal.js
+View presentation online: http://scrum-for-developers.github.io/presentations/
 
-This is still work in progress.
+# For local test and development
 
-What I want to do is rebuild the scrum for developers presentation with reveal.js.
-
-## Installation instructions
-
-To look at it, just open the index.html.
-
-~~To build it you need node installed. Then run (in a presentation folder):
-console
-npm install
-grunt serve~~
-
-Forget that, it worked when I built the project but I did not write down
-the npm version. With future versions there are conflicts. So just run a
-python http server:
+It usually works, if you just open the index.html. Some presentations need a running http server. The most simple thing to do is to serve the directory with python:
 
 * With Python2:
 `python -m SimpleHTTPServer`
