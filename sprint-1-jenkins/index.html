@@ -6,7 +6,7 @@
 
 		<title>SCRUM for developers workshop by codecentric</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="description" content="A framework for easily creating beautifli presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -35,18 +35,6 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-		<style type="text/css">
-			ul {
-				margin-top: 0;
-			}
-			table.training-schedule {
-				font-size:0.6em;
-			}
-			table.training-schedule td {
-				padding-top: 1em;
-				padding-bottom: 1em;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -55,139 +43,46 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
 				<section data-background="img/background_title.jpg" data-state="intro">
 					<img src="img/cc_logo.png" class="cc_logo" />
-					<h1 class="heading">Scrum for developers</h1>
+					<h2 class="heading">Scrum for developers - Sprint 1</h2>
 					<hr class="heading"/>
-					<h3 class="heading">Scrum for development team members</h3>
+					<h3 class="heading">Jenkins</h3>
 				</section>
-				<section>
-					<h2>Training Schedule</h2>
-					<table class="training-schedule">
-						<tr>
-							<th><h3>Day 1</h3></th>
-							<th><h3>Day 2</h3></th>
-							<th><h3>Day 3</h3></th>
-						</tr>
-						<tr>
-							<td>
-								<h4>Sprint 1: Introduction</h4>
-								<ul>
-									<!-- The students already know Scrum Basics, Git and Maven-->
-									<!--<li>Scrum Basics</li>-->
-									<li>Worblehat Architecture</li>
-									<li><!-- Git, Maven, -->Jenkins</li>
-								</ul>
-							</td>
-							<td>
-								<h4>Sprint 3: TDD</h4>
-								<ul>
-									<li>TDD</li>
-									<li>Mocking</li>
-									<li>Coverage</li>
-								</ul>
-							</td>
-							<td>
-								<h4>Sprint 5: Code Quality</h4>
-								<ul>
-									<li>Refactoring</li>
-									<li>Metrics</li>
-									<li>Clean Code</li>
-								</ul>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<h4>Sprint 2: Release Migration</h4>
-								<ul>
-									<li>Version Numbers</li>
-									<li>Release Notes</li>
-									<li>Database Migration</li>
-								</ul>
-							</td>
-							<td>
-								<h4>Sprint 4: Acceptance Testing</h4>
-								<ul>
-									<li>Motivation</li>
-									<li>Executable Specs</li>
-									<li>Acceptance Test Framework</li>
-								</ul>
 
+				<section>
+					<h2>Continuous Integration</h2>
+					<table style="font-size:0.7em;">
+						<tr>
+							<td style="width:50%;">
+								<strong>Advantages:</strong>
+								<ul>
+									<li>Fast feedback for everybody about integration status</li>
+									<li>Picks up changes to version control automatically</li>
+									<li>Uses same build environment as local developer</li>
+									<li>Single point of truth (no more "works on my machine")</li>
+								</ul>
 							</td>
-							<td>
+							<td class="dodbox"><strong>Definition of Done:</strong>
+								<ul>
+									<li>project is built on CI-server</li>
+									<li class="former">dependencies are managed</li>
+									<li class="former">sources are under version control</li>
+								</ul>
 							</td>
 						</tr>
 					</table>
 				</section>
-				<section>
-					<h2>Anatomy of a training sprint</h2>
-					<table style="font-size:0.6em;">
-						<tr>
-							<th><h3>Activity</h3></th>
-							<th><h3>Time</h3></th>
-							<th><h3>Description</h3></th>
-						</tr>
-						<tr>
-							<td>Instruction</td>
-							<td>60</td>
-							<td>Presentation and demonstration of new and
-								relevant tools & practices</td>
-						</tr>
-						<tr>
-							<td>Backlog Refinement</td>
-							<td>15</td>
-							<td>Team Estimates the Product Backlog</td>
-						</tr>
-						<tr>
-							<td>-- Break --</td>
-							<td>10</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>Sprint Planning</td>
-							<td>5</td>
-							<td>Product owner presents backlog priority; each team
-								forecasts the delivered</td>
-						</tr>
-						<tr>
-							<td>Task breakdown</td>
-							<td>10</td>
-							<td>Each team determines how to build the functionality</td>
-						</tr>
-						<tr>
-							<td>Sprint</td>
-							<td>92</td>
-							<td>The team self-organizes to complete their tasks
-								(4 days à 23 minutes: 3' Daily Scrum + 20' virtual day)</td>
-						</tr>
-						<tr>
-							<td>Sprint review</td>
-							<td>15</td>
-							<td>Teams present their done functionality</td>
-						</tr>
-						<tr>
-							<td>Sprint retrospective</td>
-							<td>15</td>
-							<td>A brief team retrospective meeting will be held to inspect and adapt</td>
-						</tr>
-					</table>
-				</section>
-				<section>
-					<h2>A-Ha wall, feedback door</h1>
-					<img src="img/wall1.jpg" style="width:500px;"/>
-					<img src="img/wall2.jpg" style="width:400px;"/>
-				</section>
+
 			</div>
 			<div class="footer">
 				<img src="img/cc_logo.png" class="cc_logo_footer" />
 			</div>
 		</div>
-
-
-
 		<script>
 
-			// Full list of configuration options available at:
+			// Flil list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: false,
