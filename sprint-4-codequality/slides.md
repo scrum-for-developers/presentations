@@ -37,17 +37,6 @@
      
 ---
 
-Clean Code  - A Handbook of Agile Software Craftsmanship  - Robert C. Martin
-
-(ISBN-13: 978-0-13-235088-4)
-
-A great set of advice/rules for writing good code
-
-<!-- LeBlanc’s law: “Later equals never”  (“Later I will improve my code!”) -->
-
-
----
-
 ### Live Coding
 
   
